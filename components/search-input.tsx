@@ -15,7 +15,7 @@ export const SearchInput = () => {
     const name = searchParams.get("name");
 
     const [value, setValue] = useState(name || "");
-    // use-debounce.ts - make the sytem debounce, dont wanna query with every charater, only query after substational char are typed.
+    // [hooks] use-debounce.ts - make the sytem debounce, dont wanna query with every charater, only query after substational char are typed.
     const debouncedValue = useDebounce<string>(value, 500); // search only when finished typing from the user
     const onChange: ChangeEventHandler<HTMLInputElement> = (e) => {
         setValue(e.target.value);
