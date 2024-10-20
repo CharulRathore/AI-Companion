@@ -1,13 +1,12 @@
 "use client";
 
+import { useRouter, useSearchParams } from "next/navigation";
+import { Category } from "@prisma/client";
+
+
 import qs from "query-string";
 import { cn } from "@/lib/utils";
-import { useRouter, useSearchParams } from "next/navigation";
 
-interface Category {
-    id: string;
-    name: string;
-}
 
 interface CategoriesProps {
     data: Category[];
