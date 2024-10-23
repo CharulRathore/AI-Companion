@@ -6,15 +6,15 @@ async function main() {
     try {
         await db.category.createMany({
             data: [
-                { name: "Famous People" },
-                { name: "Movies & TV" },
-                { name: "Games" },
-                { name: "Musicians" },
-                { name: "Animals" },
-                { name: "Philosophy" },
-                { name: "Famous People" },
-                { name: "Scientists" },
-                { name: "Crazy" },
+                { name: "RAG" },
+                { name: "Graph RAG" },
+                { name: "Embedding Techniques" },
+                { name: "Ethical AI" },
+                { name: "Conversational AI" },
+                { name: "Chatbots" },
+                { name: "AI in Production" },
+                // { name: "Scientists" },
+                // { name: "Crazy" },
             ]
         })
     } catch (error) {
