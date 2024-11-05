@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, Plus, Settings } from "lucide-react";
+import { Crown, Home, Plus } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
@@ -24,9 +24,9 @@ export const Sidebar = () => {
             pro: true,
         },
         {
-            icon: Settings ,
-            href: "/settings",
-            label: "Settings",
+            icon: Crown ,
+            href: "/dashboard",
+            label: "dashboard",
             pro: false,
         },
     ];
