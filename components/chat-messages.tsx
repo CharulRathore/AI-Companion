@@ -28,7 +28,7 @@ export default function ChatMessages({
         isLoading={messages.length === 0 && isLoading} // Only show if loading and no messages
         src={companion.src}
         role="system"
-        content={`We will be learning about ${companion.name}. Topics covered are ${companion.description}.`}
+        content={`We will be learning about ${companion.name}. Ask me about them.`}
       />
       {messages.map((message) => (
         <ChatMessage
