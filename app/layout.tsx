@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs"
 
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
+import { Toaster } from "@/components/ui/toaster"
 
 
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           className={cn("bg-secondary", inter.className)}>
           <ThemeProvider  attribute="class" defaultTheme="system" enableSystem>
           {children}
+          <Toaster />
           </ThemeProvider>
         </body>
       </html>
