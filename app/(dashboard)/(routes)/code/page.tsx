@@ -93,7 +93,7 @@ const CodePage = () => {
                           <Input
                             className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                             disabled={isLoading} 
-                            placeholder="Write C++ code to reverse a LinkedList." 
+                            placeholder="   Write C++ code to reverse a LinkedList." 
                             {...field}
                           />
                         </FormControl>
