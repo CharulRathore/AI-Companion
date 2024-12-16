@@ -13,8 +13,6 @@ async function main() {
                 { name: "Conversational AI" },
                 { name: "Chatbots" },
                 { name: "AI in Production" },
-                // { name: "Scientists" },
-                // { name: "Crazy" },
             ]
         })
     } catch (error) {
